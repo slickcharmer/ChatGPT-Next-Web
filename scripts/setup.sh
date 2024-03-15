@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Check if running on a supported system
-case "$(uname -s)" in
-  Linux)
+case "$(uname -s)" in Linux)
     if [[ -f "/etc/lsb-release" ]]; then
       . /etc/lsb-release
       if [[ "$DISTRIB_ID" != "Ubuntu" ]]; then
